@@ -19,10 +19,13 @@ git clone https://github.com/isamu-isozaki/gamified-cybersecurity-ai-server.git 
 To update do
 ```
 cd frontend
+git checkout main
 git pull origin main
 cd ../backend
+git checkout main
 git pull origin main
 cd ../ai-server
+git checkout main
 git pull origin main
 cd ..
 ```
