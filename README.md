@@ -29,3 +29,18 @@ git checkout main
 git pull origin main
 cd ..
 ```
+Then, do
+```
+docker-compose up
+```
+I recommend commenting out the frontend part of docker-compose and just do
+```
+cd frontend
+yarn
+yarn start
+```
+and if you are developing backend, you can just do
+```
+npm install
+npm run dev
+```
