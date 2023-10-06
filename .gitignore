@@ -1,4 +1,7 @@
 # Byte-compiled / optimized / DLL files
+frontend
+backend
+ai-server
 __pycache__/
 *.py[cod]
 *$py.class
