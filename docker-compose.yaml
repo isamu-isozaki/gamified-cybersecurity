@@ -33,6 +33,12 @@ services:
         hostname: "vulnerable"
         ports:
             - "22:22"
+    attacker-machine:
+        image: "debian:latest"
+        restart: unless-stopped
+        hostname: "vulnerable"
+        ports:
+            - "22:22"
     db:
         image: postgres
         command: postgres -c 'max_connections=500'
