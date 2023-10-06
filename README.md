@@ -29,6 +29,20 @@ git checkout main
 git pull origin main
 cd ..
 ```
+Then, make a .env file in frontend folder with the following contents
+```
+REACT_APP_API_URL='http://localhost:10000'
+```
+In the backend folder, make a .env file with the following contents
+```
+APP_PORT=10000
+API_URL="http://localhost:3000"
+TEMP_DIR="imgs"
+SSH_HOST="localhost"
+SSH_USER="root"
+SSH_PASS="root"
+SSH_PORT=1022
+```
 Then, do
 ```
 docker-compose up
@@ -44,3 +58,5 @@ and if you are developing backend, you can just do
 npm install
 npm run dev
 ```
+
+To start testing out, you should have with an url localhost:3000. Put in the command ls in there and you should get the terminal output.
