@@ -35,7 +35,7 @@ services:
         hostname: "vulnerable"
         tty: true
         ports:
-            - "2022:22"
+            - "127.0.0.1:2022:22"
     attacker-machine:
         build:
             context: ./attack-machine
@@ -44,7 +44,7 @@ services:
         hostname: "attack"
         tty: true
         ports:
-            - "1022:22"
+            - "127.0.0.1:1022:22"
     db:
         image: postgres
         command: postgres -c 'max_connections=500'
